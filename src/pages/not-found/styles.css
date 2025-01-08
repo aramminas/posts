@@ -1,0 +1,8 @@
+.not-found-block button a {
+  all: unset;
+}
+
+.not-found-block {
+  width: 800px;
+  padding: 5rem 2.5rem;
+}

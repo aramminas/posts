@@ -1,0 +1,16 @@
+footer {
+  font-size: 1rem;
+  color: var(--text-black);
+  border-top: 1px solid var(--border-color);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.footer-site-name {
+  font-weight: 600;
+  color: var(--text-grey);
+}

@@ -1,0 +1,13 @@
+.error {
+  border: 1px solid;
+  margin: 0.625rem 0;
+  padding: 1rem 0.625rem 1rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+  background-image: url("../../assets/icons/error.png");
+}

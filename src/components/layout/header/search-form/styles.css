@@ -1,0 +1,44 @@
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-form input {
+  border: 1px solid var(--border-color);
+  height: 26px;
+  border-radius: 6px;
+  width: 70px;
+  padding: 0 0.375rem;
+  transition: width 1.2s ease-in;
+}
+
+.search-form input:focus-visible {
+  border: 1px solid var(--border-color);
+  outline: none;
+  width: 156px;
+}
+
+.search-form button {
+  border: none;
+  background: none;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+}
+
+.search-form button img {
+  height: 16px;
+  width: 16px;
+}
+
+.search-form button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-form input:focus-visible {
+    width: 90px;
+  }
+}

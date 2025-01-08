@@ -1,0 +1,9 @@
+.app-logo {
+  margin: auto;
+  height: var(--logo-height);
+}
+
+.app-logo img {
+  width: var(--logo-width);
+  height: var(--logo-height);
+}

@@ -1,0 +1,88 @@
+.app-nav-bar {
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+
+.app-nav-bar ul,
+.app-nav-bar li,
+.app-nav-bar a {
+  all: unset;
+}
+
+.app-nav-bar ul.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.navbar-list a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: var(--text-black);
+  transition: color 0.2s ease-in;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navbar-list a:hover {
+  cursor: pointer;
+  color: var(--text-hover-color);
+}
+
+li.navbar-item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item .sub-navbar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: max-content;
+  top: 58px;
+  left: 0;
+  padding: 1.25rem 1.25rem 0.8rem 1.25rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.navbar-item .sub-navbar li {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-item .sub-navbar li:last-child {
+  border-bottom: none;
+}
+
+.navbar-item .sub-navbar li a {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 400px;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-item .sub-navbar li a img {
+  transform: rotate(-90deg);
+}
+
+.navbar-item:hover .sub-navbar {
+  display: flex;
+}
+
+.app-nav-bar {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-nav-bar {
+    display: none;
+  }
+}

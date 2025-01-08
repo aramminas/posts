@@ -1,0 +1,31 @@
+.app-header {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  transition: top 2s linear 0s;
+  background-color: var(--bg-color);
+}
+
+.app-header.hide {
+  top: -100%;
+}
+
+.header-aside {
+  width: 182px;
+}
+
+.header-item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .header-aside {
+    width: 100px;
+  }
+}
